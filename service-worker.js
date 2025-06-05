@@ -1,10 +1,10 @@
-const CACHE_NAME = 'Foldaa-pwa-cache-v2';
+const CACHE_NAME = 'foldaa-pwa-cache-v2';
 const urlsToCache = [
-    '/foldaa/',
-    '/foldaa/index.html',
-    '/foldaa/manifest.json',
-    '/foldaa/icon-192x192.png',
-    '/foldaa/icon-512x512.png'
+    '/',
+    '/index.html',
+    '/manifest.json',
+    '/icon-192x192.png',
+    '/icon-512x512.png'
 ];
 
 self.addEventListener('install', (event) => {
