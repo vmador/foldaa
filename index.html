@@ -23,6 +23,23 @@
     <meta name="twitter:description" content="Turn any Framer Website into PWA">
     <meta name="twitter:image" content="/social-preview.png">
     <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" sizes="192x192" href="/icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/icon-512x512.png">
+    <link rel="apple-touch-icon" href="/icon-192x192.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#000000">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="foldaa">
+    <meta property="og:title" content="foldaa">
+    <meta property="og:description" content="Turn any Framer Website into PWA">
+    <meta property="og:image" content="/social-preview.png">
+    <meta property="og:url" content="https://foldapp.framer.website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="foldaa">
+    <meta name="twitter:description" content="Turn any Framer Website into PWA">
+    <meta name="twitter:image" content="/social-preview.png">
+    <link rel="manifest" href="manifest.json">
     <link rel="icon" type="image/png" sizes="192x192" href="/foldaa/icon-192x192.png">
     <link rel="icon" type="image/png" sizes="512x512" href="/foldaa/icon-512x512.png">
     <link rel="apple-touch-icon" href="/foldaa/icon-192x192.png">
@@ -46,6 +63,22 @@
             height: 100%; 
             overflow: hidden; 
             background-color: #000000; 
+        }
+        iframe { 
+            width: 100lvw; 
+            height: 100lvh; 
+            border: none; 
+            position: fixed; 
+            top: 0; 
+            left: 0; 
+            right: 0; 
+            bottom: 0; 
+        }
+        @supports(padding: max(0px)) {
+            body, iframe { 
+                padding-top: env(safe-area-inset-top); 
+                height: calc(100lvh - env(safe-area-inset-top)); 
+            }
         }
         iframe { 
             width: 100lvw; 
